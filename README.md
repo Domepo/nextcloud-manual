@@ -222,11 +222,7 @@ Falls Nextcloud das irgendwann packt, kann dieser command aus dem Skript entfern
 Da Docker selber auf der SSD liegt, müssen wir den Volumes (Speicher von MariaDB und Nextcloud) sagen, dass sie ihre daten auf das RAID Verzeichniss legen sollen.
 Hier ein kleines Schaubild dazu:
 
-
-BILDBILDBILD
-BILDBILDBILD
-BILDBILDBILD
-BILDBILDBILD
+![OMV-SCHEMA](https://github.com/Domepo/nextcloud-manual/blob/main/assets/img/OMV.png)
 
 ### 4.3 Finale Installation
 Um nun endlich Nextcloud zu installeren fehlt nur noch ein kleiner command, der via SSH in dem gleichen Ort wie die yml Date ausgeführt werden muss.

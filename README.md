@@ -20,6 +20,7 @@ Eine Anleitung zur Lokalen Installation von Nextcloud auf basis von OpenMediaVau
     + [4.1.2 Warum sind diese Anpassungen wichtig?](#412-warum-sind-diese-anpassungen-wichtig-)
     + [4.3 Finale Installation](#43-finale-installation)
   * [5 Letzte Schritte](#5-letzte-schritte)
+    + [5.1 Automatisches Hoch- und runterfahren](#51-automatisches-hoch--und-runterfahren)
   * [6 Todo](#6-todo)
   * [7 Quellen](#7-quellen)
 
@@ -244,6 +245,18 @@ Die Daten dafür sind in der docker-compose.yml festgehalten:
 # Database name: ncdb
 # Database host: maria-db
 ```
+### 5.1 Automatisches Hoch- und runterfahren
+Hier noch ein Anleitung um den Server Automatisch Hoch- und runterzufahren:
+https://www.youtube.com/watch?v=6fXNsu9I-h4
+1. Auf System (OMV)
+2. Geplante Aufgaben
+3. Hinzufügen
+4. Daten Eingeben (wann das NAS herunterfahren soll)
+5. Dann folgenden Kommand unter Command eingeben
+6. ``` rtcwake -m off -s60```
+7. 60 = Sekunden
+
+Jetzt fährt das NAS geregelt runter und wartet 1 Minute bis er wieder hochfährt.
 Das wars :)
 
 ## 6 Todo
